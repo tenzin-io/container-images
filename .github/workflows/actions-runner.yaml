@@ -54,7 +54,7 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           build-args:
-            RUNNER_VERSION: ${{ inputs.runner_version }} 
+            - RUNNER_VERSION: ${{ inputs.runner_version }} 
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
