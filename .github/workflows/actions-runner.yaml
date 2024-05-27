@@ -49,6 +49,7 @@ jobs:
         id: build-and-push
         uses: docker/build-push-action@v5
         with:
+          platforms: linux/amd64,linux/arm64
           context: "{{ defaultContext }}:actions-runner"
           push: true
           tags: ${{ steps.meta.outputs.tags }}
