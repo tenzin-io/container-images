@@ -1,0 +1,2 @@
+ARG SQUID_VERSION=5.2-22.04_beta
+FROM ubuntu/squid:${SQUID_VERSION}}
