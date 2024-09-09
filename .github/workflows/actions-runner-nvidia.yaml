@@ -31,7 +31,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          role-to-assume: ${{ vars.AWS_ROLE_TO_ASSUME }}
+          role-to-assume: arn:aws:iam::130900203380:role/tenzin-io.container-images
           aws-region: us-east-1
 
       - name: Install cosign
@@ -88,7 +88,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          role-to-assume: ${{ vars.AWS_ROLE_TO_ASSUME }}
+          role-to-assume: arn:aws:iam::130900203380:role/tenzin-io.container-images
           aws-region: us-east-1
 
       - name: Set up Docker Buildx
